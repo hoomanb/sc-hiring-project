@@ -6,10 +6,11 @@
 {{#each model as |applicant|}}
 <div>
   <h2>{{applicant.name}}</h2>
-  <p>Age: {{applicant.name}}</p>
+  <p>Age: {{applicant.age}}</p>
 </div>
 {{else}}
 <div>No records found</div>
 {{/each}}
+
 
 <button {{on 'click' (action 'addNew')}} >Add new</button>
