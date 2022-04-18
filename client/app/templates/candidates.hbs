@@ -12,5 +12,28 @@
 <div>No records found</div>
 {{/each}}
 
+<hr/>
+
+<h2>Add Candidate</h2>
+
+<div>
+  <label for="user-question">Name:</label>
+  <Input
+    id="candidateName"
+    @type="text"
+    @value=""
+  />
+</div>
+
+<div>
+  <label for="user-question">Age:</label>
+  <Input
+    id="candidateAge"
+    @type="text"
+    @value=""
+    size="3"
+    maxlength="3"
+  />
+</div>
 
 <button {{on 'click' (action 'addNew')}} >Add new</button>
